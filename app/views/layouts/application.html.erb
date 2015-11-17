@@ -6,27 +6,10 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
-  <h1> Pick a SuperHero !!!!</h1>
+
 
 </head>
 <body>
-
-<p>This webapps offers a brief history about Superman, Batman, and The Flash.
-All three being among the most popular DC Comics character universe.</p>
-
-<p>Feel free to click on the page links provided to learn more about Superman, Batman, and The Flash.</p>
-
-
-
-
-  <% if current_user %>
-    <h3><%= link_to 'Signout', destroy_user_session_path, :method => :delete %></h3>
-  <% else %>
-    <h3><%= link_to 'Signup', new_user_registration_path %></h3>
-    <h3><%= link_to 'Login', new_user_session_path %></h3>
-  <% end %>
-
-
 
 <%= yield %>
 
