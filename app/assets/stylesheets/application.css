@@ -1,6 +1,15 @@
+h1 {
+  font-family: fantasy;
+  color: maroon;
+  text-align: center;
+}
+
+
 body {
 
 background-color: cadetblue;
+font-family: fantasy;
+color: maroon;
 
 }
 
