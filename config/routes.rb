@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-root 'pages#welcome'
+  root 'pages#welcome'
+  resources :superheroes
+  
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

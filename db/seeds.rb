@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Superhero.destroy_all
+
+batman = Superhero.create!(name: 'Batman', photo_url: 'batman.jpeg')
+superman = Superhero.create!(name: 'Superman', photo_url: 'superman.jpeg')
+the_flash = Superhero.create!(name: 'The Flash', photo_url: 'The_Flash.jpeg')
