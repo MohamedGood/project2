@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'pages#welcome'
-  resources :superheroes
-  
+  resources :superheroes do
+  resources  :comments
+  end
+
+
 
 
 

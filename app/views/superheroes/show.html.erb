@@ -7,3 +7,15 @@
 </p>
 
 <div class = "image_tag"><%= image_tag @superhero.photo_url %></div>
+
+<h3>Comments</h3>
+<% @superhero.comments.each do |comment| %>
+<p>
+<%= comment.body %> by:
+<%= comment.author %>
+</p>
+
+
+<% end %>
+
+<%= render 'comments/form' %>

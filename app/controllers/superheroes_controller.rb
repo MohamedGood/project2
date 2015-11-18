@@ -7,6 +7,7 @@ class SuperheroesController < ApplicationController
 
   def show
     @superhero = Superhero.find(params[:id])
+    @comment = @superhero.comments.new
   end
 
 
@@ -26,4 +27,4 @@ class SuperheroesController < ApplicationController
     @superhero = Superhero.all
   end
 
-end 
+end
