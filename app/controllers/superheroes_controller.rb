@@ -9,4 +9,21 @@ class SuperheroesController < ApplicationController
     @superhero = Superhero.find(params[:id])
   end
 
-end
+
+  def create
+    @superhero = Superhero.all
+  end
+
+  def edit
+    @superhero = Superhero.all
+  end
+
+  def update
+    @superhero = Superhero.all
+  end
+
+  def destroy
+    @superhero = Superhero.all
+  end
+
+end 
