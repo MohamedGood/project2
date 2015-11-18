@@ -2,7 +2,7 @@
 
 <ul>
   <% @superheroes.each do |superhero| %>
-    <li>
+    <li class = "image_tag">
       <%= link_to superhero.name, superhero_path(superhero) %>
       <%= image_tag superhero.photo_url %>
     </li>
