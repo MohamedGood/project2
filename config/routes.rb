@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :superheroes do
   resources  :comments
   end
-
+#indentation wouldn't hurt here - dt
 
 
 
